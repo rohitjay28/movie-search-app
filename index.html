@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="pic">
+        <img src="movie-time-600w-324455369.webp" />
+      </div>
+      <h3 class="logo">Movie Search App</h3>
+      <form id="form">
+        <input
+          type="text"
+          placeholder="Search"
+          id="search"
+          class="search"
+          required
+        />
+        <button type="submit" class="fas fa-search" id="button"></button>
+      </form>
+    </header>
+
+    <main id="main"></main>
+    <h1 hidden id="recommendations-header" style="text-align: center">
+      Recommendations based on search results
+    </h1>
+    <div id="recommendations"></div>
+
+    <div class="footer">
+      <h4>Designed & Developed with &#10084;&#65039; by Rohit</h4>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
