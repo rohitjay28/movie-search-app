@@ -1,3 +1,4 @@
+
 const API_KEY = "api_key=1cf50e6248dc270629e802686245c2c8";
 const BASE_URL = "https://api.themoviedb.org/3";
 const API_URL = BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
@@ -41,7 +42,7 @@ function getRecommendations(url) {
 function showMovies(data) {
   main.innerHTML = "";
   data.forEach((movie) => {
-    const { title, poster_path, vote_average, overview, } = movie;
+    const { title, poster_path, vote_average, overview } = movie;
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
     movieEl.innerHTML = `
@@ -65,7 +66,7 @@ function showMovies(data) {
 function showRecommendations(data) {
   recommendations.innerHTML = "";
   data.forEach((movie) => {
-    const { title, poster_path, vote_average, overview, } = movie;
+    const { title, poster_path, vote_average, overview } = movie;
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
     movieEl.innerHTML = `

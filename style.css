@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 
-.logo {
+.name {
   font-family: inherit;
   font-size: 22px;
   color: red;
@@ -24,13 +24,15 @@ header {
   background-color: var(--secondary-color);
 }
 .pic {
-  width: 100px;
-  height: 100px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-img {
-  height: 100%;
-  width: 100%;
-  
+
+.pic img {
+  width: 100px;
+  height: auto;
 }
 .search {
   background-color: transparent;
